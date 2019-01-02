@@ -13,7 +13,8 @@ namespace classwork
         string _door;
 
         //standard long way of a Property
-        public string Foundation {
+        public string Foundation 
+        {
             get {
                 return _foundation;
             }
@@ -24,7 +25,8 @@ namespace classwork
         }
        // shortcut 1 line line of code property + field
         public string Roof { get; set; }
-        public string Window {
+        public string Window 
+        {
             get {
                 return _window;
             }

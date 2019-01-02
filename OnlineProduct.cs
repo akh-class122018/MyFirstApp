@@ -50,7 +50,7 @@ namespace classwork
 
         public void Buy()
         {
-            Console.WriteLine("Product is bought");
+            Console.WriteLine("Product was bought");
         }
         public void Return()
         {
@@ -64,7 +64,7 @@ namespace classwork
         }
         public void SaveForLater()
         {
-            Console.WriteLine("Product is has been saved for later");
+            Console.WriteLine("Product has been saved for later");
 
         }
 
