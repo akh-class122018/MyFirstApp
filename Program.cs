@@ -14,13 +14,41 @@ namespace classwork
         static void Main(string[] args)
         {
             /* console = class inside a system, Writeclass.method takes a parameter */
-            Console.WriteLine("Hello World!");
-            MyHouseResults();
-            MyOnlineProductResults();
-            MyNumericExamples();
-    
+            // Console.WriteLine("Hello World!");
+            // MyHouseResults();
+            // MyOnlineProductResults();
+            // MyNumericExamples();
+            MyStringExamples();
+        }
+
+
+        static void MyStringExamples()
+        {
+            StringTypes myTypes = new StringTypes();
+            myTypes.SampleString();
+            myTypes.AddString();
+            string words = myTypes.StringBuilderExample
+            ("Hello", "C Sharp", "Class");
+
+            Console.WriteLine(words);
+
+            StringTypes myTypes1 = new StringTypes();
+            myTypes.SampleString();
+            myTypes.AddString();
+            string mytestwords = myTypes1.StringBuilderExample
+            ("Hi", "Second");
+
+            Console.WriteLine(mytestwords);
+            myTypes.CharTypeExample();
+            myTypes.EscapeExample();
+            myTypes.PlaceholderExample();
+
+            myTypes.ArraySample();
+            myTypes.MyHouseArray();
+            myTypes.MultiArraySample();
 
         }
+
         static void MyNumericExamples()
         {
             NumericTypes myTypes = new NumericTypes();

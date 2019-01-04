@@ -2,43 +2,47 @@
 
 namespace classwork
 {
-   // class is a modifier, public can be seen by everybody
+    // class is a modifier, public can be seen by everybody
 
     public class House
     {
-      // Attributes of a house, the following are fields
+        // Attributes of a house, the following are fields
         string _foundation;
         string _roof;
         string _window;
         string _door;
 
         //standard long way of a Property
-        public string Foundation 
+        public string Foundation
         {
-            get {
+            get
+            {
                 return _foundation;
             }
-            set {
+            set
+            {
                 this._foundation = value;
-            
-            } 
+
+            }
         }
-       // shortcut 1 line line of code property + field
+        // shortcut 1 line line of code property + field
         public string Roof { get; set; }
-        public string Window 
+        public string Window
         {
-            get {
+            get
+            {
                 return _window;
             }
-            set {
+            set
+            {
                 this._window = value;
-            
-            } 
+
+            }
         }
 
-       public string PaintDoor { get; set; }
+        public string PaintDoor { get; set; }
 
-       // Below are methods
+        // Below are methods
         public void OpenDoor()
         {
             Console.WriteLine("The door opens");
@@ -48,5 +52,9 @@ namespace classwork
             Console.WriteLine("The door closes");
 
         }
+
+        
+
+
     }
 }

@@ -12,29 +12,38 @@ namespace classwork
         string _description;
 
         //standard long way of a Property
-        public string Name {
-            get {
+        public string Name
+        {
+            get
+            {
                 return _name;
             }
-            set {
+            set
+            {
                 this._name = value;
-            } 
+            }
         }
 
-        public string Picture {
-            get {
+        public string Picture
+        {
+            get
+            {
                 return _picture;
             }
-            set {
+            set
+            {
                 this._picture = value;
             }
         }
 
-        public string Price {
-            get {
+        public string Price
+        {
+            get
+            {
                 return _price;
             }
-            set {
+            set
+            {
                 this._price = value;
             }
         }
@@ -42,7 +51,7 @@ namespace classwork
 
 
 
-       // shortcut 1 line line of code property + field
+        // shortcut 1 line line of code property + field
 
         public string Dimension { get; set; }
 
@@ -78,6 +87,6 @@ namespace classwork
             Console.WriteLine("Product has been prepared for shipping");
 
         }
-   
+
     }
 }
