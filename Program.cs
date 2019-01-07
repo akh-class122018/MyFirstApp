@@ -18,9 +18,71 @@ namespace classwork
             // MyHouseResults();
             // MyOnlineProductResults();
             // MyNumericExamples();
-            MyStringExamples();
+            // MyStringExamples();
+            StatementSamples();
         }
+        static void StatementSamples()
+        {
+            StatementExamples se = new StatementExamples();
+            se.SampleIf();
+            Console.WriteLine(" ");
+            se.SampleIfElse();
+            Console.WriteLine(" ");
+            se.SampleIfChain();
+            Console.WriteLine(" ");
+            se.SampleIfAnd();
+            Console.WriteLine(" ");
+            se.SampleIfOr();
+            Console.WriteLine(" ");
+            se.SampleConditional();
+            Console.WriteLine(" ");
+            se.SampleSwitch(10);
+            Console.WriteLine(" ");
+            se.SampleWhile();
+            Console.WriteLine(" ");
+            se.SampleDoWhile();
+            Console.WriteLine(" ");
 
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
+            se.SampleFor();
+            Console.WriteLine(" ");
+            se.SampleForEach();
+
+            Console.WriteLine(" ");
+
+            string myString = se.JumpStatementExample("Sunday");
+            Console.WriteLine(myString);
+
+            Console.WriteLine(" ");
+
+            string myString1 = se.JumpStatementExample("Saturday");
+            Console.WriteLine(myString1);
+
+            string myString2 = se.JumpStatementExample("Friday");
+            Console.WriteLine(myString2);
+
+            Console.WriteLine(" ");
+
+            string myString3 = se.JumpStatementExample("Tuesday");
+            Console.WriteLine(myString3);
+
+            Console.WriteLine(" ");
+
+            string myString4 = se.JumpStatementExample("Monday");
+            Console.WriteLine(myString4);
+
+            BottlesSong();
+
+
+
+        }
+        static void BottlesSong()
+        {
+            BottlesOfBeer beer = new BottlesOfBeer();
+            string song = beer.BottlesOfBeerSong();
+            Console.WriteLine(song);
+        }
 
         static void MyStringExamples()
         {
