@@ -42,18 +42,56 @@ namespace classwork
 
         public string PaintDoor { get; set; }
 
+        public House() { }
+
+        // these field need to be assigned Roof = "shingles"; PaintDoor = "Green";
+        public House(string foundation, string window)
+
+        {
+            this._foundation = foundation;
+            this._window = window;
+            this.Roof = "shingles";
+            this.PaintDoor = "Green";
+        }
+
+        // doorPaint renamed on purpose so it is not confuse, roof and paintdoor are assinged in my parameter
+        public House(string foundation, string window, string roof, string doorPaint)
+
+        {
+            this._foundation = foundation;
+            this._window = window;
+            this.Roof = roof;
+            this.PaintDoor = doorPaint;
+
+        }
+
+
         // Below are methods
         public void OpenDoor()
         {
             Console.WriteLine("The door opens");
         }
+
+        // overload declare method with the same name but signature is different
+        public void OpenDoor(bool isExterior)
+        {
+            if (isExterior)
+            {
+                Console.WriteLine("Open front door.");
+            }
+            else
+            {
+                Console.WriteLine("Open Bedroom door.");
+            }
+        }
+
         public void CloseDoor()
         {
             Console.WriteLine("The door closes");
 
         }
 
-        
+
 
 
     }

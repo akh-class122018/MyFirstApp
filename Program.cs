@@ -19,62 +19,102 @@ namespace classwork
             // MyOnlineProductResults();
             // MyNumericExamples();
             // MyStringExamples();
-            StatementSamples();
+            // StatementSamples();
+            HouseSample();
+            Console.WriteLine(" ");
+            OnlineProductSample();
+            Console.WriteLine(" ");
+            StructSample();
+
+
         }
+
+        static void OnlineProductSample()
+        {
+            OnlineProduct myOnlineProduct = new OnlineProduct("Toybook", "Picture of a a toy book");
+
+            Console.WriteLine(myOnlineProduct.Name);
+            Console.WriteLine(myOnlineProduct.Price);
+            Console.WriteLine(myOnlineProduct.Picture);
+            Console.WriteLine(myOnlineProduct.Dimension);
+
+
+            myOnlineProduct.Buy(true);
+
+        }
+
+        static void HouseSample()
+        {
+            House myHouse = new House("concrete", "triple pane");
+
+            Console.WriteLine(myHouse.PaintDoor);
+            Console.WriteLine(myHouse.Foundation);
+
+            myHouse.OpenDoor(true);
+
+        }
+        static void StructSample()
+        {
+            BookSample bookSample = new BookSample(4.99m, "Zombie Fallout", "Mark Tufo");
+
+            Console.WriteLine("the book " + bookSample.title + " by " + bookSample.author + " is $" + bookSample.price);
+
+        }
+
         static void StatementSamples()
         {
             StatementExamples se = new StatementExamples();
-            se.SampleIf();
-            Console.WriteLine(" ");
-            se.SampleIfElse();
-            Console.WriteLine(" ");
-            se.SampleIfChain();
-            Console.WriteLine(" ");
-            se.SampleIfAnd();
-            Console.WriteLine(" ");
-            se.SampleIfOr();
-            Console.WriteLine(" ");
-            se.SampleConditional();
-            Console.WriteLine(" ");
-            se.SampleSwitch(10);
-            Console.WriteLine(" ");
-            se.SampleWhile();
-            Console.WriteLine(" ");
-            se.SampleDoWhile();
-            Console.WriteLine(" ");
+            //se.SampleIf();
+            //Console.WriteLine(" ");
+            //se.SampleIfElse();
+            //Console.WriteLine(" ");
+            //se.SampleIfChain();
+            //Console.WriteLine(" ");
+            //se.SampleIfAnd();
+            //Console.WriteLine(" ");
+            //se.SampleIfOr();
+            //Console.WriteLine(" ");
+            //se.SampleConditional();
+            //Console.WriteLine(" ");
+            //se.SampleSwitch(10);
+            //Console.WriteLine(" ");
+            //se.SampleWhile();
+            //Console.WriteLine(" ");
+            //se.SampleDoWhile();
+            //Console.WriteLine(" ");
 
-            Console.WriteLine(" ");
-            Console.WriteLine(" ");
-            se.SampleFor();
-            Console.WriteLine(" ");
-            se.SampleForEach();
+            //Console.WriteLine(" ");
+            //Console.WriteLine(" ");
+            //se.SampleFor();
+            //Console.WriteLine(" ");
+            //se.SampleForEach();
 
-            Console.WriteLine(" ");
+            //Console.WriteLine(" ");
 
-            string myString = se.JumpStatementExample("Sunday");
-            Console.WriteLine(myString);
+            //string myString = se.JumpStatementExample("Sunday");
+            //Console.WriteLine(myString);
 
-            Console.WriteLine(" ");
+            //Console.WriteLine(" ");
 
-            string myString1 = se.JumpStatementExample("Saturday");
-            Console.WriteLine(myString1);
+            //string myString1 = se.JumpStatementExample("Saturday");
+            //Console.WriteLine(myString1);
 
-            string myString2 = se.JumpStatementExample("Friday");
-            Console.WriteLine(myString2);
+            //string myString2 = se.JumpStatementExample("Friday");
+            //Console.WriteLine(myString2);
 
-            Console.WriteLine(" ");
+            //Console.WriteLine(" ");
 
-            string myString3 = se.JumpStatementExample("Tuesday");
-            Console.WriteLine(myString3);
+            //string myString3 = se.JumpStatementExample("Tuesday");
+            //Console.WriteLine(myString3);
 
-            Console.WriteLine(" ");
+            //Console.WriteLine(" ");
 
-            string myString4 = se.JumpStatementExample("Monday");
-            Console.WriteLine(myString4);
+            //string myString4 = se.JumpStatementExample("Monday");
+            //Console.WriteLine(myString4);
 
-            BottlesSong();
+            //BottlesSong();
 
-
+            se.SampleDays(DaysOfWeek.Wed);
 
         }
         static void BottlesSong()
@@ -207,5 +247,6 @@ namespace classwork
             myThirdOnlineProduct.Return();
         }
     }
+
 }
 

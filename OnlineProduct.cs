@@ -11,6 +11,7 @@ namespace classwork
         string _dimension;
         string _description;
 
+
         //standard long way of a Property
         public string Name
         {
@@ -57,10 +58,42 @@ namespace classwork
 
         public string Description { get; set; }
 
+        public OnlineProduct() { }
+
+        public OnlineProduct(string name, string picture)
+        {
+            this._name = name;
+            this._picture = picture;
+            this.Price = "5 dollars";
+            this.Dimension = "5 inch by 6 inch";
+        }
+
+        public OnlineProduct(string name, string picture, string price, string dimension, string description)
+        {
+            this._name = name;
+            this._picture = picture;
+            this.Price = price;
+            this.Dimension = dimension;
+            this.Description = description;
+        }
+
         public void Buy()
         {
             Console.WriteLine("Product was bought");
         }
+
+        //overload
+        public void Buy(bool paidWithCC)
+        {
+            if (paidWithCC)
+            {
+                Console.WriteLine("Product was bought with Credit Card");
+
+            }
+            else
+                Console.WriteLine("Product was bought with Other Payment");
+        }
+
         public void Return()
         {
             Console.WriteLine("Product was returned");
