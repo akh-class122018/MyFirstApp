@@ -1,5 +1,6 @@
 ﻿using System;
 using Lessons;
+using Quiz;
 
 /* This namespace represents the file folder that the class is in */
 namespace classwork
@@ -20,14 +21,40 @@ namespace classwork
             // MyNumericExamples();
             // MyStringExamples();
             // StatementSamples();
-            HouseSample();
-            Console.WriteLine(" ");
-            OnlineProductSample();
-            Console.WriteLine(" ");
-            StructSample();
+            // HouseSample();
+            ///Console.WriteLine(" ");
+            // OnlineProductSample();
+            // Console.WriteLine(" ");
+            // StructSample();
+
+            //MyGradesSample();
+
+            DividesByThree();
+
 
 
         }
+
+        static void DividesByThree()
+        {
+            QuizClass1 myQuizClass1 = new QuizClass1();
+            myQuizClass1.DividesByThree();
+        }
+
+
+
+
+        static void MyGradesSample()
+        {
+            QuizClass1 myQuizClass1 = new QuizClass1();
+            myQuizClass1.SampleGrades(MyGrades.V);
+            string _Grade1 = myQuizClass1.SampleGrades(MyGrades.E);
+            string _Grade6 = myQuizClass1.SampleGrades(MyGrades.NA);
+            Console.WriteLine(_Grade1);
+            Console.WriteLine(_Grade6);
+
+        }
+
 
         static void OnlineProductSample()
         {
