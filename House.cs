@@ -45,14 +45,24 @@ namespace classwork
         public House() { }
 
         // these field need to be assigned Roof = "shingles"; PaintDoor = "Green";
-        public House(string foundation, string window)
 
+        //orinal house file
+        //public House(string foundation, string window)
+
+        //{
+        //this._foundation = foundation;
+        // this._window = window;
+        // this.Roof = "shingles";
+        //this.PaintDoor = "Green";
+        // }
+
+        /*this runs below constructor */
+        public House(string foundation, string window)
+        : this(foundation, window, "shingles", "Green")
         {
-            this._foundation = foundation;
-            this._window = window;
-            this.Roof = "shingles";
-            this.PaintDoor = "Green";
+
         }
+
 
         // doorPaint renamed on purpose so it is not confuse, roof and paintdoor are assinged in my parameter
         public House(string foundation, string window, string roof, string doorPaint)

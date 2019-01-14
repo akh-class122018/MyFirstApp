@@ -29,9 +29,33 @@ namespace classwork
 
             //MyGradesSample();
 
-            DividesByThree();
+            //DividesByThree();
+
+            FruitSample();
 
 
+
+        }
+
+        static void FruitSample()
+        {
+            Apple myApple = new Apple();
+            myApple.EatFruit();
+
+            Fruit myFruit = new Fruit();
+            Orange myOrange = new Orange();
+            myOrange.EatFruit();
+
+            Apple myApple2 = new Apple();
+            myApple2.EatFruit2();
+
+            Fruit myFruit2 = new Fruit();
+            Orange myOrange2 = new Orange();
+            myOrange2.EatFruit2();
+
+            RanchStyle ranch = new RanchStyle("Stone", "Triple Pane", "Composite", "Blue");
+            ranch.OpenDoor();
+            Console.WriteLine(ranch.Roof);
 
         }
 
