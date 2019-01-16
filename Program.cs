@@ -31,9 +31,59 @@ namespace classwork
 
             //DividesByThree();
 
-            FruitSample();
+            //FruitSample();
+
+            //ParamsSample();
+
+            //ModifierExample();
+            OutSample();
+        }
+
+        static void OutSample()
+        {
+
+            String myTestName, myTestSecondName;
+            Lesson11 mylesson = new Lesson11();
+            mylesson.OutSample("John Doe", out myTestName, out myTestSecondName);
+
+            Console.WriteLine(myTestName);
+            Console.WriteLine(myTestSecondName);
+
+            // Output - myTestName = John & mySecondName = Doe
+        }
 
 
+
+        static void ModifierExample()
+        {
+            int test = 14;
+            Lesson11 mylesson = new Lesson11();
+            mylesson.RefSample(ref test);
+            Console.WriteLine(test);
+            // Output = 19
+
+            // string first, second;
+            // mylesson.OutSample("John Doe", out first, out second);
+            // Console.WriteLine(first);
+            // Console.WriteLine(second);
+
+
+        }
+
+        static void ParamsSample()
+        {
+            Lesson11 lesson = new Lesson11();
+            lesson.Useparams(10, 3, 24, 36, 45, 120);
+
+            lesson.Useparams(); //accepts 0 and more agruments, just creates a line when prints
+
+            int[] intArray = { 2, 3, 4, 5, 6 };
+            lesson.Useparams(intArray);
+
+            lesson.Useparams2(1, "Happy", false, 34.5F);
+
+            lesson.OptionalParam("Tom");
+            lesson.OptionalParam("Ted", 19);
 
         }
 
