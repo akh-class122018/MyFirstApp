@@ -36,8 +36,58 @@ namespace classwork
             //ParamsSample();
 
             //ModifierExample();
-            OutSample();
+            //OutSample();
+
+            //Lesson12();
+
+            AbstractDemo();
+
         }
+
+        static void AbstractDemo()
+        {
+            TRex myTrex = new TRex();
+            Triceratops myTriceratops = new Triceratops();
+
+            myTrex.EatFood();
+            myTrex.Move();
+            myTrex.Sleeps();
+            myTrex.Communicates();
+            myTrex.SkinType();
+            myTrex.Teeth();
+
+            Console.WriteLine(" ");
+
+            myTriceratops.EatFood();
+            // has not been overwritten so "the dinosaur moves"
+            myTriceratops.Move();
+            myTriceratops.Sleeps();
+            myTriceratops.Communicates();
+            myTriceratops.SkinType();
+            myTriceratops.Teeth();
+
+            Console.WriteLine(" ");
+
+            Teradactyl myTeradactyl = new Teradactyl();
+
+            myTeradactyl.EatFood();
+            myTeradactyl.Move();
+            myTeradactyl.Sleeps();
+            myTeradactyl.Communicates();
+            myTeradactyl.Teeth();
+            myTeradactyl.SkinType();
+        }
+
+        static void Lesson12()
+        {
+            double temp = Utilities.CelsiusToFahrenheit("43.2");
+            double temp2 = Utilities.FahrenheitToCelsius("109.76");
+
+            Console.WriteLine(temp);
+            Console.WriteLine(temp2);
+
+        }
+
 
         static void OutSample()
         {
