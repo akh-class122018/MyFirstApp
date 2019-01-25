@@ -33,5 +33,4 @@ namespace Lessons
             Console.WriteLine("Razor sharp");
         }
     }
-
 }

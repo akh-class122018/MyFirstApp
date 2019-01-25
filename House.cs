@@ -9,7 +9,8 @@ namespace classwork
         // Attributes of a house, the following are fields
         string _foundation;
         string _roof;
-        string _window;
+        // default value added "double pane"
+        string _window = "double pane";
         string _door;
 
         //standard long way of a Property
@@ -25,8 +26,13 @@ namespace classwork
 
             }
         }
-        // shortcut 1 line line of code property + field
-        public string Roof { get; set; }
+        // shortcut 1 line line of code property + field; Auto Property        
+        // public string Roof { get; set; }
+
+        // add default value/definition to auto property "Composite"
+        public string Roof { get; set; } = "Composite";
+
+
         public string Window
         {
             get

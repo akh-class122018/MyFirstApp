@@ -4,6 +4,8 @@ namespace Lessons
 
     public abstract class Dinosaur : IPrehistoric
     {
+        // add default value to auto property "TraveL"
+        public string Travel { get; set; } = "Walk";
         public abstract void EatFood();
 
         // public virtual can't use semicolon at end needs { } instead

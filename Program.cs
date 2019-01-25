@@ -40,7 +40,53 @@ namespace classwork
 
             //Lesson12();
 
-            AbstractDemo();
+            //AbstractDemo();
+
+            //DeconstructSample();
+
+            //FinalizerExample();
+
+            //IndexerSample();
+
+            PartialSample();
+
+        }
+
+        static void PartialSample()
+        {
+            Pear pear = new Pear("yellow");
+        }
+        static void IndexerSample()
+        {
+            //class  variable name
+            IndexerExample indexerExample = new IndexerExample();
+            indexerExample[2] = 250;
+
+            for (int i = 0; i < indexerExample.Length; i++)
+            {
+                //i 1st position in ths array
+                Console.WriteLine("Postion {0} = {1}", i, indexerExample[i]);
+            }
+        }
+        static void FinalizerExample()
+        {
+            FinalizerExample finalizerExample = new FinalizerExample("John", "Doe");
+
+        }
+        static void DeconstructSample()
+        {
+            string first = "Tom", last = "Jones";
+
+            //create object, constructor, 2 variables variable to field
+            Lesson13 lesson13 = new Lesson13("John", "Doe");
+
+            //print values only
+            Console.WriteLine("First Name = {0} and Last Name = {1}", first, last);
+
+            //field to variable
+            lesson13.Deconstruct(out first, out last);
+
+            Console.WriteLine("First Name = {0} and Last Name = {1}", first, last);
 
         }
 
