@@ -50,7 +50,7 @@ namespace classwork
 
         public House() { }
 
-        // these field need to be assigned Roof = "shingles"; PaintDoor = "Green";
+        // these fields need to be assigned Roof = "shingles"; PaintDoor = "Green";
 
         //orinal house file
         //public House(string foundation, string window)
