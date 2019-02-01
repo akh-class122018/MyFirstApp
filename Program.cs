@@ -52,9 +52,47 @@ namespace classwork
 
             //AnotherHouseExample();
 
-            CollectionsSample();
+            //CollectionsSample();
+
+            TelevisonSample();
+        }
+
+        static void TelevisonSample()
+        {
+
+            HdTV myHdTv = new HdTV("65 inch", 6);
+
+            myHdTv.TurnsOn();
+            myHdTv.TurnsOff();
+            Console.WriteLine(myHdTv.Price);
+            Console.WriteLine(myHdTv.Size);
+            Console.WriteLine(myHdTv.NumberofPorts);
+            Console.WriteLine(myHdTv.IsMountable);
+
+            Console.WriteLine(" ");
 
 
+            FourkTv myFourkTv = new FourkTv("70 inch", 4, 5000, false);
+
+            myFourkTv.TurnsOn();
+            myFourkTv.TurnsOff();
+            Console.WriteLine(myFourkTv.Size);
+            Console.WriteLine(myFourkTv.NumberofPorts);
+            Console.WriteLine(myFourkTv.Price);
+            Console.WriteLine(myFourkTv.IsMountable);
+
+
+
+
+        }
+
+        static void Lesson12()
+        {
+            double temp = Utilities.CelsiusToFahrenheit("43.2");
+            double temp2 = Utilities.FahrenheitToCelsius("109.76");
+
+            Console.WriteLine(temp);
+            Console.WriteLine(temp2);
 
         }
 
@@ -177,7 +215,7 @@ namespace classwork
             myTeradactyl.SkinType();
         }
 
-        static void Lesson12()
+        static void Lesson12Sample()
         {
             double temp = Utilities.CelsiusToFahrenheit("43.2");
             double temp2 = Utilities.FahrenheitToCelsius("109.76");
@@ -497,6 +535,4 @@ namespace classwork
             myThirdOnlineProduct.Return();
         }
     }
-
 }
-

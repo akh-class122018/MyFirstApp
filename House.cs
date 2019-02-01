@@ -62,7 +62,7 @@ namespace classwork
         //this.PaintDoor = "Green";
         // }
 
-        /*this runs below constructor */
+        /*this runs below constructor :shingles, green are default constructor */
         public House(string foundation, string window)
         : this(foundation, window, "shingles", "Green")
         {
