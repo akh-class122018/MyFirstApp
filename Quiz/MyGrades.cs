@@ -1,3 +1,4 @@
+using System;
 namespace Quiz
 {
     public enum MyGrades

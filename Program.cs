@@ -54,8 +54,36 @@ namespace classwork
 
             //CollectionsSample();
 
-            TelevisonSample();
+            //TelevisonSample();
+
+            LabResults();
+
+            EnumConversion();
+
         }
+        static void EnumConversion()
+        {
+            ConvertTypes lab2 = new ConvertTypes();
+            lab2.ConversionFeet(4.5, ConvertTypes.FeetConvert.Centimeters);
+        }
+        static void LabResults()
+        {
+
+            LabResults lr1 = new LabResults();
+            lr1.SampleConversion(ConvertEnum.mm);
+            string _convervariable1 = lr1.SampleConversion(ConvertEnum.mm);
+            string _convervariable2 = lr1.SampleConversion(ConvertEnum.cm);
+            string _convervariable3 = lr1.SampleConversion(ConvertEnum.inch);
+            string _convervariable4 = lr1.SampleConversion(ConvertEnum.m);
+            string _convervariable5 = lr1.SampleConversion(ConvertEnum.y);
+            Console.WriteLine(_convervariable1);
+            Console.WriteLine(_convervariable2);
+            Console.WriteLine(_convervariable3);
+            Console.WriteLine(_convervariable4);
+            Console.WriteLine(_convervariable5);
+
+        }
+
 
         static void TelevisonSample()
         {
