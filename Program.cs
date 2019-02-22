@@ -56,16 +56,66 @@ namespace classwork
 
             //TelevisonSample();
 
-            LabResults();
+            // LabResults();
 
-            EnumConversion();
+            //EnumConversion();
+
+            //LeapYear();
+
+            Question5Struct();
+
 
         }
+
+
+        static void Question5Struct()
+        {
+            TVS TV1;
+            TVS TV2;
+
+            TV1.TurnsOff = "with remote";
+            TV1.TurnsOn = "with remote";
+            TV1.Price = 2000.99m;
+            TV1.IsMountable = false;
+
+            Console.WriteLine("TV 1 turns off : {0}", TV1.TurnsOff);
+            Console.WriteLine("TV 1 turns on : {0}", TV1.TurnsOn);
+            Console.WriteLine("TV 1 Price is ${0}", TV1.Price);
+            Console.WriteLine("TV 1 Is Mountable : {0}", TV1.IsMountable);
+
+
+            TV2.TurnsOff = "with app";
+            TV2.TurnsOn = "with app";
+            TV2.Price = 4000.99m;
+            TV2.IsMountable = true;
+
+            Console.WriteLine("TV 2 turns off : {0}", TV2.TurnsOff);
+            Console.WriteLine("TV 2 turns on : {0}", TV2.TurnsOn);
+            Console.WriteLine("TV 2 Price is ${0}", TV2.Price);
+            Console.WriteLine("TV 2 Is Mountable : {0}", TV2.IsMountable);
+
+
+        }
+
+        static void LeapYear()
+        {
+            LeapYear obj = new LeapYear();
+            obj.readdata();
+            obj.leap();
+        }
+
         static void EnumConversion()
         {
             ConvertTypes lab2 = new ConvertTypes();
             lab2.ConversionFeet(4.5, ConvertTypes.FeetConvert.Centimeters);
+            lab2.ConversionFeet(15.3, ConvertTypes.FeetConvert.Inches);
+            lab2.ConversionFeet(8.33, ConvertTypes.FeetConvert.Yards);
+            lab2.ConversionFeet(2.21, ConvertTypes.FeetConvert.Meters);
+            lab2.ConversionFeet(11.1, ConvertTypes.FeetConvert.Millimeters);
+
+
         }
+
         static void LabResults()
         {
 
@@ -88,7 +138,7 @@ namespace classwork
         static void TelevisonSample()
         {
 
-            HdTV myHdTv = new HdTV("65 inch", 6);
+            HdTV myHdTv = new HdTV(65, 6);
 
             myHdTv.TurnsOn();
             myHdTv.TurnsOff();
@@ -100,7 +150,7 @@ namespace classwork
             Console.WriteLine(" ");
 
 
-            FourkTv myFourkTv = new FourkTv("70 inch", 4, 5000, false);
+            FourkTv myFourkTv = new FourkTv(70, 4, 5000, false);
 
             myFourkTv.TurnsOn();
             myFourkTv.TurnsOff();

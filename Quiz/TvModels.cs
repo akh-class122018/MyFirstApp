@@ -4,8 +4,8 @@ namespace Quiz
 {
     public abstract class TvModels : ITelevision
     {
-        public string Size { get; set; }
-        public virtual int Price { get; set; } = 500;
+        public int Size { get; set; }
+        public virtual decimal Price { get; set; } = 600.99m;
         public int NumberofPorts { get; set; }
         public bool IsMountable { get; set; } = true;
 
@@ -16,7 +16,7 @@ namespace Quiz
         }
         public abstract void TurnsOff();
 
-        public TvModels(string size, int numberofPorts, int price, bool isMountable)
+        public TvModels(int size, int numberofPorts, decimal price, bool isMountable)
         {
             Size = size;
             NumberofPorts = numberofPorts;
@@ -25,8 +25,8 @@ namespace Quiz
 
         }
 
-        public TvModels(string size, int numberofPorts)
-        : this(size, numberofPorts, 500, true)
+        public TvModels(int size, int numberofPorts)
+        : this(size, numberofPorts, 899.98m, true)
         {
 
         }

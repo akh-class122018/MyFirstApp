@@ -3,9 +3,9 @@ namespace Quiz
 {
     public class FourkTv : TvModels
     {
-        public override int Price { get; set; } = 1000;
+        public override decimal Price { get; set; } = 1000.99m;
 
-        public FourkTv(string size, int numberofPorts, int price, bool isMountable) : base(size, numberofPorts, price, isMountable)
+        public FourkTv(int size, int numberofPorts, decimal price, bool isMountable) : base(size, numberofPorts, price, isMountable)
         {
         }
 

@@ -8,6 +8,6 @@ namespace Quiz
 
         void TurnsOff();
 
-        int Price { get; set; }
+        decimal Price { get; set; }
     }
 }
