@@ -1,6 +1,6 @@
-﻿using System;
-using Lessons;
+﻿using Lessons;
 using Quiz;
+using System;
 
 /* This namespace represents the file folder that the class is in */
 namespace classwork
@@ -62,11 +62,19 @@ namespace classwork
 
             //LeapYear();
 
-            Question5Struct();
+            //Question5Struct();
 
+            MyDogYearsConversion();
 
         }
 
+        static void MyDogYearsConversion()
+
+        {
+            DogYears obj = new DogYears();
+            obj.ReadData();
+            obj.DogYearsConversion();
+        }
 
         static void Question5Struct()
         {
