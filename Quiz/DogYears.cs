@@ -12,7 +12,6 @@ namespace Quiz
         public void ReadData()
         {
             Console.WriteLine("Enter how old your dog is in human Years?");
-            //humanYears = Convert.ToInt32(Console.ReadLine());
             dogYears = Convert.ToInt32(Console.ReadLine());
 
         }

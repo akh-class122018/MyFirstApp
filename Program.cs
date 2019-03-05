@@ -1,7 +1,8 @@
 ﻿using Lessons;
 using Quiz;
-using System;
+using AllDogs;
 
+using System;
 /* This namespace represents the file folder that the class is in */
 namespace classwork
 {
@@ -64,9 +65,33 @@ namespace classwork
 
             //Question5Struct();
 
-            MyDogYearsConversion();
+            //MyDogYearsConversion();
+
+            //MyDogSizeCalculator();
+
+            MyDogYearsConversionSmall();
+            Console.WriteLine("BREAK");
+            MyDogYearsConversionMedium();
+            Console.WriteLine("BREAK");
+
+            MyDogYearsConversionLarge();
+            Console.WriteLine("BREAK");
+
 
         }
+
+        static void MyDogSizeCalculator()
+        {
+            DogSizeCalculator dsc = new DogSizeCalculator();
+            dsc.ReadData();
+            Console.WriteLine("++++++++++++++++++++++++++++++++");
+            dsc.SelectDogSize();
+
+
+
+
+        }
+
 
         static void MyDogYearsConversion()
 
@@ -74,6 +99,30 @@ namespace classwork
             DogYears obj = new DogYears();
             obj.ReadData();
             obj.DogYearsConversion();
+        }
+
+
+        static void MyDogYearsConversionSmall()
+        {
+            SmallDogs obje = new SmallDogs();
+            obje.ReadData();
+            obje.DogYearsConversionSmall();
+
+        }
+
+        static void MyDogYearsConversionMedium()
+        {
+            MediumDogs objee = new MediumDogs();
+            objee.ReadData();
+            objee.DogYearsConversionMedium();
+
+        }
+        static void MyDogYearsConversionLarge()
+        {
+            LargeDogs objj = new LargeDogs();
+            objj.ReadData();
+            objj.DogYearsConversionLarge();
+
         }
 
         static void Question5Struct()

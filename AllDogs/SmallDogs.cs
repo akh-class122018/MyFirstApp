@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Quiz
+namespace AllDogs
 {
     public class SmallDogs
     {
@@ -17,22 +17,21 @@ namespace Quiz
 
         }
 
-        public void DogYearsConversion()
+        public void DogYearsConversionSmall()
         {
             if (dogYears == 1)
             {
                 humanYears = ((dogYears - 1) * 4) + 15;
-                Console.WriteLine("Age of Dog in Dog Years is " + humanYears);
+                Console.WriteLine("Age of small Dog in Dog Years is " + humanYears);
 
             }
 
             else if (dogYears >= 2)
             {
                 humanYears = ((dogYears - 1) * 4) + 15 + 5;
-                Console.WriteLine("Age of Dog in Dog Years is " + humanYears);
+                Console.WriteLine("Age of small Dog in Dog Years is " + humanYears);
             }
 
-            Console.ReadLine();
         }
     }
 }

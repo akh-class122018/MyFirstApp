@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{B5DC243D-A496-4AF9-A4EE-9E1356B0060C}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AllDogs/SmallDogs.cs">
+    <Files>
+      <File FileName="AllDogs/DogSizeCalculator.cs" Line="46" Column="10" />
+      <File FileName="AllDogs/LargeDogs.cs" Line="11" Column="9" />
+      <File FileName="AllDogs/MediumDogs.cs" Line="12" Column="31" />
+      <File FileName="AllDogs/SmallDogs.cs" Line="21" Column="10" />
+      <File FileName="Program.cs" Line="82" Column="28" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="classwork" expanded="True">
+            <Node name="classwork" expanded="True">
+              <Node name="AllDogs" expanded="True">
+                <Node name="SmallDogs.cs" selected="True" />
+              </Node>
+              <Node name="Quiz" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.classwork PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
