@@ -31,13 +31,15 @@ namespace AllDogs
                 Console.WriteLine("Thank You for entering the information. Your Dog is small.");
                 Console.WriteLine(" ");
                 sdog.ReadData();
+                sdog.DogYearsConversionSmall();
             }
 
-            else if (dogWeight == 21 && dogWeight <= 50)
+            else if (dogWeight == 21 || dogWeight <= 50)
             {
                 Console.WriteLine("Thank You for entering the information. Your Dog is medium sized.");
                 Console.WriteLine(" ");
                 mdog.ReadData();
+                mdog.DogYearsConversionMedium();
             }
 
             else if (dogWeight >= 50)
@@ -45,6 +47,7 @@ namespace AllDogs
                 Console.WriteLine("Thank You for entering the information. Your Dog is Large.");
                 Console.WriteLine(" ");
                 ldog.ReadData();
+                ldog.DogYearsConversionLarge();
 
             }
 

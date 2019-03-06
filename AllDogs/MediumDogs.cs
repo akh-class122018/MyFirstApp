@@ -18,6 +18,7 @@ namespace AllDogs
 
         public void DogYearsConversionMedium()
         {
+
             if (dogYearsM == 1)
             {
                 humanYearsM = ((dogYearsM - 1) * 4) + 15;
@@ -25,7 +26,7 @@ namespace AllDogs
 
             }
 
-            else if (dogYearsM >= 2 && dogYearsM >= 5)
+            else if (dogYearsM >= 2 && dogYearsM <= 5)
             {
                 //humanYearsM = ((dogYearsM - 1) * 4) + 15 + 5;
                 humanYearsM = ((dogYearsM - 1) * 4) + 20;
@@ -40,7 +41,7 @@ namespace AllDogs
                 Console.WriteLine("Age of Medium Sized Dog in Dog Years is " + humanYearsM);
             }
 
-            else if (dogYearsM == 7 && dogYearsM == 8)
+            else if (dogYearsM == 7 || dogYearsM == 8)
             {
                 //humanYearsM = ((dogYearsM - 1) * 4) + (15 + 5) + 3;
                 humanYearsM = ((dogYearsM - 1) * 4) + 23;
@@ -48,7 +49,7 @@ namespace AllDogs
                 Console.WriteLine("Age of Medium Sized Dog in Dog Years is " + humanYearsM);
             }
 
-            else if (dogYearsM == 9 && dogYearsM == 10)
+            else if (dogYearsM == 9 || dogYearsM == 10)
             {
                 //humanYearsM = ((dogYearsM - 1) * 4) + (15 + 5) + 4;
                 humanYearsM = ((dogYearsM - 1) * 4) + 24;
@@ -56,28 +57,34 @@ namespace AllDogs
                 Console.WriteLine("Age of Medium Sized Dog in Dog Years is " + humanYearsM);
             }
 
-            else if (dogYearsM == 11 && dogYearsM == 12)
+            else if (dogYearsM == 11 || dogYearsM == 12)
             {
                 //humanYearsM = (((dogYearsM - 1) * 4) + (15 + 5) + 5);
-                humanYearsM = (((dogYearsM - 1) * 4) + 25);
+                humanYearsM = ((dogYearsM - 1) * 4) + 25;
 
                 Console.WriteLine("Age of Medium Sized Dog in Dog Years is " + humanYearsM);
             }
 
-            else if (dogYearsM == 13 && dogYearsM == 14)
+            else if (dogYearsM == 13 || dogYearsM == 14)
             {
                 //humanYearsM = ((dogYearsM - 1) * 4) + (15 + 5) + 6;
                 humanYearsM = ((dogYearsM - 1) * 4) + 26;
                 Console.WriteLine("Age of Medium Sized Dog in Dog Years is " + humanYearsM);
             }
 
-            else if (dogYearsM == 15 && dogYearsM == 16)
+            else if (dogYearsM == 15 || dogYearsM == 16)
             {
                 //humanYearsM = ((dogYearsM - 1) * 4) + (15 + 5) + 7;
                 humanYearsM = ((dogYearsM - 1) * 4) + 27;
 
                 Console.WriteLine("Age of Medium Sized Dog in Dog Years is " + humanYearsM);
             }
+            else
+            {
+                Console.WriteLine("Your dog is 17 years or older, we a currently unable to calcutale dog years");
+            }
+
+
         }
     }
 }

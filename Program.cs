@@ -67,25 +67,30 @@ namespace classwork
 
             //MyDogYearsConversion();
 
-            //MyDogSizeCalculator();
-
-            MyDogYearsConversionSmall();
-            Console.WriteLine("BREAK");
-            MyDogYearsConversionMedium();
-            Console.WriteLine("BREAK");
-
-            MyDogYearsConversionLarge();
-            Console.WriteLine("BREAK");
+            MyDogSizeCalculator();
 
 
+            //MyDogYearsConversionSmall();
+            //Console.WriteLine("BREAK");
+
+            //MyDogYearsConversionMedium();
+            //Console.WriteLine("BREAK");
+
+            //MyDogYearsConversionLarge();
+            // Console.WriteLine("BREAK");
         }
 
         static void MyDogSizeCalculator()
         {
             DogSizeCalculator dsc = new DogSizeCalculator();
             dsc.ReadData();
-            Console.WriteLine("++++++++++++++++++++++++++++++++");
+            Console.WriteLine("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
             dsc.SelectDogSize();
+            Console.WriteLine("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+            Console.WriteLine("Thank You for using our Calculator");
+            Console.WriteLine("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+
+
 
 
 

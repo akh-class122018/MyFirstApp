@@ -26,11 +26,19 @@ namespace AllDogs
 
             }
 
-            else if (dogYears >= 2)
+            //else if (dogYears >= 2)
+            else if (dogYears >= 2 || dogYears < 16)
+
             {
                 humanYears = ((dogYears - 1) * 4) + 15 + 5;
                 Console.WriteLine("Age of small Dog in Dog Years is " + humanYears);
             }
+
+            else
+            {
+                Console.WriteLine("Your dog is 17 years or older, we a currently unable to calcutale dog years");
+            }
+
 
         }
     }
