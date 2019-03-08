@@ -3,12 +3,19 @@ using Quiz;
 using AllDogs;
 
 using System;
+
+using Advanced;
+
 /* This namespace represents the file folder that the class is in */
 namespace classwork
 {
+
+
     //class is a blueprint of an object
     class Program
     {
+        public delegate void TryOn(string type);
+
         //static = no copy, meaning there is only 1
         //void = is a return type
         //main = is a method name
@@ -67,7 +74,7 @@ namespace classwork
 
             //MyDogYearsConversion();
 
-            MyDogSizeCalculator();
+            //MyDogSizeCalculator();
 
 
             //MyDogYearsConversionSmall();
@@ -78,6 +85,38 @@ namespace classwork
 
             //MyDogYearsConversionLarge();
             // Console.WriteLine("BREAK");
+            //DelegateSample();
+            MultiDelegateSample();
+
+        }
+
+        private static void MultiDelegateSample()
+        //slide10
+        {
+            Hats moreHats = new Hats(7);
+            ////create 3 delegate objects
+
+            TryOn someHats, niceHat, sadHat;
+
+            niceHat = moreHats.FindLuckyHat;
+            niceHat("Top");
+
+            sadHat = moreHats.FindUglyHat;
+            sadHat("Dunce");
+
+            // sad hat and nice hat are assigned to this someHats
+            someHats = niceHat + sadHat;
+            someHats("Cowboy");
+
+        }
+
+        private static void DelegateSample()
+        {
+            Hats myHat = new Hats("Cowboy", 7);
+            TryOn theHat = myHat.TryOnHat;
+            theHat("I tried on a " + myHat.HatType + " hat that was size " + myHat.HatSize);
+
+            Hats mySecondHat = new Hats();
         }
 
         static void MyDogSizeCalculator()
