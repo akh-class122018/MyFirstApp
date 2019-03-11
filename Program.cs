@@ -86,10 +86,18 @@ namespace classwork
             //MyDogYearsConversionLarge();
             // Console.WriteLine("BREAK");
             //DelegateSample();
-            MultiDelegateSample();
+            //MultiDelegateSample();
+            EventSample();
 
         }
 
+
+        private static void EventSample()
+        {
+            Coats myCoat = new Coats();
+            string result = myCoat.MyResult;
+            Console.WriteLine(result);
+        }
         private static void MultiDelegateSample()
         //slide10
         {
