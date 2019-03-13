@@ -87,10 +87,26 @@ namespace classwork
             // Console.WriteLine("BREAK");
             //DelegateSample();
             //MultiDelegateSample();
-            EventSample();
+            //EventSample();
+            LambdaSample();
 
         }
 
+        private static void LambdaSample()
+        {
+            LambdaExample myLambda = new LambdaExample();
+            Console.WriteLine(myLambda.MyLambdaOne(5));
+            Console.WriteLine(myLambda.MyLambdaOne(6));
+            Console.WriteLine(myLambda.MyLambdaOne(7));
+            Console.WriteLine(myLambda.MyLambdaOne(8));
+            Console.WriteLine(myLambda.MyLambdaOne(9));
+            Console.WriteLine(myLambda.MyLambdaOne(10));
+
+
+
+
+
+        }
 
         private static void EventSample()
         {
